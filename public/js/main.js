@@ -23,13 +23,12 @@ switch (jour) {
 
 // Exo 2
 let age = prompt('Quel âge as-tu?')
-switch (age) {
-    case "17" :
+let rep = (age<18)
+switch (rep) {
+    case true :
         alert("Tu es mineur petit con")
         break;
-    case "22" :
-        alert("Tu es majeur grand con")
-        break;
     default:
+        alert("Tu es majeur grand con")
         break;
 }
